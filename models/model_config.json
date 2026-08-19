@@ -1,0 +1,47 @@
+{
+  "name": "AceFormer",
+  "architecture": "Two-branch ESM2 and 31-mer peptide one-hot gated fusion neural network",
+  "esm_model": "facebook/esm2_t12_35M_UR50D",
+  "esm_hidden_size": 480,
+  "esm_feature_blocks": [
+    "site_residue",
+    "window_mean",
+    "window_max",
+    "window_std"
+  ],
+  "esm_dim": 1920,
+  "peptide_window": 31,
+  "peptide_alphabet": "ACDEFGHIKLMNPQRSTVWYX",
+  "peptide_dim": 651,
+  "threshold": 0.5,
+  "general_checkpoints": [
+    "fold_1_model_20260428_104551.pt",
+    "fold_2_model_20260428_104551.pt",
+    "fold_3_model_20260428_104551.pt",
+    "fold_4_model_20260428_104551.pt",
+    "fold_5_model_20260428_104551.pt"
+  ],
+  "enzyme_specific_enzymes": [
+    "CREBBP",
+    "EP300",
+    "HAT1",
+    "HDAC1",
+    "HDAC2",
+    "HDAC3",
+    "HDAC5",
+    "HDAC6",
+    "HDAC8",
+    "KAT2A",
+    "KAT2B",
+    "KAT5",
+    "KAT8",
+    "PCAF",
+    "SIRT1",
+    "SIRT2",
+    "SIRT3",
+    "SIRT4",
+    "SIRT5",
+    "SIRT6",
+    "SIRT7"
+  ]
+}

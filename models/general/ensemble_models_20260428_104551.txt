@@ -1,0 +1,5 @@
+/data/chenweiw/Aceformer/model/fold_1_model_20260428_104551.pt
+/data/chenweiw/Aceformer/model/fold_2_model_20260428_104551.pt
+/data/chenweiw/Aceformer/model/fold_3_model_20260428_104551.pt
+/data/chenweiw/Aceformer/model/fold_4_model_20260428_104551.pt
+/data/chenweiw/Aceformer/model/fold_5_model_20260428_104551.pt

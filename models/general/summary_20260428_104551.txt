@@ -1,0 +1,36 @@
+AceFormer Deep Model Training Summary
+Train file: /data/chenweiw/Aceformer/feature/train_data_feature.tsv
+Test file: /data/chenweiw/Aceformer/feature/test_data_feature.tsv
+Max epochs: 100
+Batch size: 128
+Learning rate: 0.001
+Patience: 10
+Random state: 42
+CV folds: 5
+CV splitter: StratifiedGroupKFold
+Device: cuda
+ESM dim: 1920
+Peptide dim: 651
+
+Cross-validation out-of-fold performance:
+AUROC: 0.858486
+AUPRC: 0.814899
+Accuracy: 0.797331
+F1: 0.773668
+MCC: 0.592353
+
+Cross-validation ensemble test performance:
+AUROC: 0.918833
+AUPRC: 0.916272
+Accuracy: 0.841229
+F1: 0.840326
+MCC: 0.682501
+
+Ensemble model checkpoints:
+/data/chenweiw/Aceformer/model/fold_1_model_20260428_104551.pt
+/data/chenweiw/Aceformer/model/fold_2_model_20260428_104551.pt
+/data/chenweiw/Aceformer/model/fold_3_model_20260428_104551.pt
+/data/chenweiw/Aceformer/model/fold_4_model_20260428_104551.pt
+/data/chenweiw/Aceformer/model/fold_5_model_20260428_104551.pt
+
+Ensemble manifest: /data/chenweiw/Aceformer/model/ensemble_models_20260428_104551.txt
